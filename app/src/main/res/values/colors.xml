@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFD51D</color>
+    <color name="colorPrimaryDark">#ECC00D</color>
+    <color name="colorAccent">#585858</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="textColor">#484848</color>
+    <color name="darkTextColor">#4a4a4a</color>
+    <color name="hint_color">#8a8a8a</color>
+    <color name="light_hint_color">#eeeeee</color>
+    <color name="teal_500">#009688</color>
+    <color name="orange">#F7981F</color>
+
+</resources>

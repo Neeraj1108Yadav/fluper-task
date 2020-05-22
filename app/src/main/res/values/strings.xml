@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FluperTask</string>
+    <string name="rs">\u20B9</string>
+    <string name="off">10%  OFF</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>\
+
+    <string name="product_name">Product Name</string>
+    <string name="product_desc">Product Description</string>
+    <string name="regular_price">Regular Price</string>
+    <string name="sale_price">Sale Price</string>
+
+    <string name="fluper_task">Fluper Task</string>
+    <string name="product_list">Product List</string>
+    <string name="product_info">Product Info</string>
+
+    <string name="product_1">Create Product 1</string>
+    <string name="product_2">Create Product 2</string>
+    <string name="product_3">Create Product 3</string>
+    <string name="show">Show Product</string>
+    <string name="colors_avail"><u>Available Colors</u></string>
+    <string name="stores_avail"><u>Available In Stores</u></string>
+    <string name="pro_desc"><u>Product Description</u></string>
+
+    <string name="red">Red</string>
+    <string name="black">Black</string>
+    <string name="yellow">Yellow</string>
+    <string name="blue">Blue</string>
+
+    <string name="bag_one">Skybags</string>
+    <string name="bag_one_desc">Skybags is the latest style statement of traveller’s and the brand offers
+                                vibrant and unique designs bags matched with respective personality.</string>
+
+    <string name="bag_two">Samsonite</string>
+    <string name="bag_two_desc">Samsonite luggage bags are designed with strong and durable polyester with
+        distinct ranges of hard and soft,hard luggage manufactured at plant in Nashik.
+        Samsonite luggage is an American brand and one of most famous brand of luggage bags in
+        India after American Tourister.</string>
+
+    <string name="bag_three">Tommy Hilfiger</string>
+    <string name="bag_three_desc">Tommy Hilfiger travel trolley bags are very well designed to make
+        personal packing easier and to reduce the travel load from your shoulders to luggage bags.</string>
+</resources>

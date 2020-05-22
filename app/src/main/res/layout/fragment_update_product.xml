@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="UPDATE PRODUCT"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/darkTextColor"
+        android:gravity="center"
+        android:fontFamily="@font/gotham_narrow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            style="@style/ProductTextView"/>
+
+        <EditText
+            android:id="@+id/editText_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ProductEditText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sale_price"
+            style="@style/ProductTextView"/>
+
+        <EditText
+            android:id="@+id/editText_salePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            style="@style/ProductEditText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular_price"
+            style="@style/ProductTextView"/>
+
+        <EditText
+            android:id="@+id/editText_regularPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            style="@style/ProductEditText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_desc"
+            style="@style/ProductTextView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/square_box">
+
+            <EditText
+                android:id="@+id/editText_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/uni_padding"
+                android:textColor="@color/textColor"
+                android:maxLength="150"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/medium_text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        style="@style/AppButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/high_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:text="@string/update"/>
+
+</LinearLayout>

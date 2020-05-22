@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductInfo">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                app:layout_constraintStart_toStartOf="@id/toolbar"
+                android:gravity="center"
+                android:padding="@dimen/high_padding"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:id="@+id/imageView_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_hint_color"/>
+
+            <TextView
+                android:id="@+id/textView_productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:textColor="@color/darkTextColor"
+                android:fontFamily="@font/gotham_narrow"
+                android:textSize="@dimen/heading_text_size"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/normal_padding">
+
+                <TextView
+                    android:id="@+id/textView_salePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:textSize="@dimen/bigger_text_size"
+                    android:fontFamily="@font/gotham_narrow"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView_regularPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/textView_salePrice"
+                    app:layout_constraintTop_toTopOf="@id/textView_salePrice"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_salePrice"
+                    android:layout_marginStart="@dimen/high_margin"
+                    android:textSize="@dimen/big_text_size"
+                    android:fontFamily="@font/gotham_narrow"
+                    android:textColor="@color/hint_color"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/hint_color"
+                    app:layout_constraintStart_toStartOf="@id/textView_regularPrice"
+                    app:layout_constraintEnd_toEndOf="@id/textView_regularPrice"
+                    app:layout_constraintTop_toTopOf="@id/textView_regularPrice"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_regularPrice"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/textView_regularPrice"
+                    app:layout_constraintTop_toTopOf="@id/textView_salePrice"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_salePrice"
+                    android:text="@string/off"
+                    android:fontFamily="@font/gillsans"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_text_size"
+                    android:layout_marginStart="@dimen/high_margin"
+                    android:padding="@dimen/very_small_padding"
+                    android:background="@drawable/rectangle"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_hint_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/colors_avail"
+                android:paddingTop="@dimen/medium_padding"
+                android:paddingStart="@dimen/normal_padding"
+                android:paddingEnd="@dimen/normal_padding"
+                android:paddingBottom="@dimen/normal_padding"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/heading_text_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/medium_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/gillsans"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yellow"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/gillsans"
+                    android:layout_marginStart="@dimen/medium_margin"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blue"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/gillsans"
+                    android:layout_marginStart="@dimen/medium_margin"
+                    android:textSize="@dimen/medium_text_size"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_hint_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pro_desc"
+                android:paddingTop="@dimen/medium_padding"
+                android:paddingStart="@dimen/normal_padding"
+                android:paddingEnd="@dimen/normal_padding"
+                android:paddingBottom="@dimen/normal_padding"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/heading_text_size"/>
+
+            <TextView
+                android:id="@+id/textView_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal_padding"
+                android:paddingEnd="@dimen/normal_padding"
+                android:paddingBottom="@dimen/normal_padding"
+                android:textColor="@color/darkTextColor"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/medium_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_hint_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stores_avail"
+                android:paddingTop="@dimen/medium_padding"
+                android:paddingStart="@dimen/normal_padding"
+                android:paddingEnd="@dimen/normal_padding"
+                android:paddingBottom="@dimen/normal_padding"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/heading_text_size"/>
+
+            <TextView
+                android:id="@+id/textView_stores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal_padding"
+                android:paddingEnd="@dimen/normal_padding"
+                android:paddingBottom="@dimen/normal_padding"
+                android:textColor="@color/darkTextColor"
+                android:fontFamily="@font/gillsans"
+                android:textSize="@dimen/medium_text_size"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/teal_500"
+        android:padding="@dimen/normal_padding"
+        android:text="ADD TO CART"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gillsans"
+        android:textStyle="bold"
+        android:textSize="@dimen/heading_text_size"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
